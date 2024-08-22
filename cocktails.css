@@ -247,4 +247,43 @@ input::placeholder {
   margin-block-end: 0;
   text-transform: uppercase;
   font-family: monospace;
+  font-size: 2rem;
+  border-radius: var(--radius);
+}
+
+.single-drink {
+  inline-size: var(--fluid-width);
+  max-width: var(--max-width);
+  margin-inline: auto;
+  margin-block-start: 4rem;
+}
+
+.drink-img {
+  inline-size: 100%;
+  block-size: 400px;
+  object-fit: cover;
+  display: block;
+  border: 10px solid var(--clr-white);
+  border-radius: var(--radius);
+}
+
+@media screen and (min-width: 992px) {
+  .single-drink {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+}
+
+.drink-info {
+  padding-top: 2rem;
+}
+
+.drink-ingredients .far {
+  margin-inline-end: 1rem;
+}
+
+.single-drink .btn {
+  display: inline-block;
+  margin-block-start: 2rem;
 }
