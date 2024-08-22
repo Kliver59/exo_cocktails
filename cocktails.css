@@ -224,4 +224,10 @@ input::placeholder {
 
 .cocktail img {
   inline-size: 100%;
+  display: block;
+  border-radius: var(--radius);
+  border: 10px solid var(--clr-white);
+  transition: var(--transition);
+  block-size: 268px;
+  object-fit: cover;
 }
